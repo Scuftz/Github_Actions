@@ -14,8 +14,4 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm test
-      - run: npx src/eslint app.js
       - run: npm run build
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          
